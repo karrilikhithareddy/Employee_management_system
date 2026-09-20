@@ -189,7 +189,7 @@ def register():
     if not fullname:
 
         return render_template(
-            "register.html",
+            "registerdemo.html",
             theme=request.cookies.get(
                 "theme",
                 "light"
@@ -200,7 +200,7 @@ def register():
     if not username:
 
         return render_template(
-            "register.html",
+            "registerdemo.html",
             theme=request.cookies.get(
                 "theme",
                 "light"
@@ -211,7 +211,7 @@ def register():
     if not password:
 
         return render_template(
-            "register.html",
+            "registerdemo.html",
             theme=request.cookies.get(
                 "theme",
                 "light"

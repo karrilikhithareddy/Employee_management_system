@@ -588,7 +588,7 @@
             <!-- EMPLOYEES -->
 
             <li>
-                <a href="/employees">Employees</a>
+                <a href="/employees" class="active">Employees</a>
             </li>
 
             <!-- ADD EMPLOYEE -->
@@ -597,11 +597,6 @@
                 <a href="/add-employee">Add Employee</a>
             </li>
 
-            <!-- SEARCH -->
-
-            <li>
-                <a href="/search">Search</a>
-            </li>
 
         </ul>
 
@@ -677,7 +672,7 @@
                         <tr>
 
                             <td>
-                                {{ employee["id"] }}
+                                {{ loop.index }}
                             </td>
 
                             <td>
@@ -733,7 +728,7 @@
 
                         {% endfor %}
 
-                    {% else %}
+                        {% else %}
 
                         <tr>
 
